@@ -14,9 +14,6 @@ function parseInput(input) {
 
 function doGameRounds(rounds) {
     const roundScores = []
-    // X = lose
-    // Y = draw
-    // Z = win
 
     rounds.forEach(round => {
         if(round[0] === constants.OPPONENT.ROCK) {
