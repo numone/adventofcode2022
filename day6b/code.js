@@ -1,6 +1,6 @@
 import constants from './input.js'
 
-function findFirstUniqueFourChars(input, length) {
+function findFirstUniqueChars(input, length) {
     for(let i=0;i<input.length;i++) {
         const testUniqueArray = []
         for(let j=0;j<length;j++) {
@@ -13,4 +13,4 @@ function findFirstUniqueFourChars(input, length) {
     }
 }
 
-console.log(findFirstUniqueFourChars(constants.MY_INPUT, 14))
+console.log(findFirstUniqueChars(constants.MY_INPUT, 14))
