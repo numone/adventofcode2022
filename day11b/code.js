@@ -41,7 +41,7 @@ function parseInput(input) {
     return monkeyData
 }
 
-function findLeadCommonMultiple(monkeyData) {
+function findLeastCommonMultiple(monkeyData) {
     let lcm = 1
     let primeNumbersIdx = 0
     let numbers = monkeyData.map(monkey => parseInt(monkey.test))
@@ -95,6 +95,6 @@ function multiplyTwoHighestInspections(monkeyData) {
 }
 
 const monkeyData = parseInput(constants.MY_INPUT)
-const leastCommonMultiple = findLeadCommonMultiple(monkeyData)
+const leastCommonMultiple = findLeastCommonMultiple(monkeyData)
 const completedMonkeyData = doRounds(monkeyData, 10000, leastCommonMultiple)
 console.log(parseInt(multiplyTwoHighestInspections(completedMonkeyData)))
